@@ -206,16 +206,16 @@ int main(){
     BookShop bookShop;//making bookShop object
 
     bool exit = false;
-    int responce;
+    int response;
     string tempTitle,tempAuthor;
     while(!exit){
       cout<<"1.Display catalog"<<endl;//displays menu bar
       cout<<"2.Search Book"<<endl;
       cout<<"3.show statics"<<endl;
       cout<<"4.Exit"<<endl;
-      cin>>responce;
+      cin>>response;
 
-      switch(responce){
+      switch(response){
         case 1:
             bookShop.displayCatalog();
             break;
@@ -233,7 +233,7 @@ int main(){
             exit = true;
             break;
         default:
-            cout<<endl<<"Invalid Responce !"<<endl;
+            cout<<endl<<"Invalid Response !"<<endl;
       }
     }
     return 0;
